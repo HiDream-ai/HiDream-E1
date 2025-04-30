@@ -113,6 +113,5 @@ def refine_instruction(src_image, src_instruction):
 
 if __name__ == "__main__":
     src_image = Image.open(args.src_image)
-    instruction = args.src_instruction
-    refined_instruction = refine_instruction(src_image, instruction)
+    refined_instruction = refine_instruction(src_image, args.src_instruction)
     print(refined_instruction)
